@@ -12,3 +12,4 @@
 - The processed data is stored in a structured format and exported as a CSV file("**music_500**") for further analysis and visualization.
 
 ## 3. Developing an App Review Analytics Dashboard using Streamlit
+- Go to my [Streamlit repo](https://github.com/sandy-lee29/streamlit-music-app)
