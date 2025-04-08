@@ -2,7 +2,7 @@
 
 ## 1. review_scraper: App Review Scraper for Google Play & Apple App Store
 - This script fetches user reviews from Google Play Store and Apple App Store using google-play-scraper and app-store-scraper. It retrieves reviews for specified apps and stores them in a structured format.
-- It supports multiple sorting options (Newest, Most Relevant) and saves extracted reviews to a CSV file("**music_sample**") for further processing
+- It supports multiple sorting options (Newest, Most Relevant) and saves extracted reviews to a CSV file("**cleaned_reviews**") for further processing
 
 ## 2. App_Review_Tagging_with_AI: Sentiment, Problem, Issue, Topic Classification for App Reviews
 - This script processes collected app reviews to extract sentiment, key issues, and standardized topics using GPT-4o-mini and prompt engineering.
