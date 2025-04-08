@@ -8,8 +8,8 @@
 - This script processes collected app reviews to extract sentiment, key issues, and standardized topics using GPT-4o-mini and prompt engineering.
 - It applies sentiment classification rules to label reviews as Positive, Neutral, or Negative based on user expressions.
 - Problems and aspects are extracted from Neutral/Negative reviews, ensuring structured issue identification.
-- Topic Standardization is performed to categorize extracted topics into predefined industry-specific and general categories using text normalization & similarity matching.
-- The processed data is stored in a structured format and exported as a CSV file("**music_500**") for further analysis and visualization.
+- Topic Standardization is performed to categorize extracted topics into predefined industry-specific and general categories using text normalization & semantic similarity matching.
+- The processed data is stored in a structured format and exported as a CSV file("**Music_1000**") for further analysis and visualization.
 
 ## 3. Developing an App Review Analytics Dashboard using Streamlit
 - Go to my [Streamlit repo](https://github.com/sandy-lee29/streamlit-music-app)
