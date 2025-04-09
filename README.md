@@ -19,7 +19,7 @@
 - A mapping is applied to the original review dataset (Music_1000.csv) to add two new columns: <br>
       - top_issue: the representative issue each sub-issue belongs to <br>
       - sub_issue_index: the position of the sub-issue within its cluster (1-based); NaN for top issues
-- The enriched dataset is exported as **Music_1000_issue_grouping.csv** for downstream analysis and visualization.
+- The enriched dataset is exported as **Music_1000_subissues.csv** for downstream analysis and visualization.
 
 ## 4. Developing an App Review Analytics Dashboard using Streamlit
 - Go to my [Streamlit repo](https://github.com/sandy-lee29/streamlit-music-app)
