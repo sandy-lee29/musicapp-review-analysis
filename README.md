@@ -11,7 +11,7 @@
 - Topic Standardization is performed to categorize extracted topics into predefined industry-specific and general categories using text normalization & semantic similarity matching.
 - The processed data is stored in a structured format and exported as a CSV file("**Music_1000**") for further analysis and visualization.
 
-## 3. top_sub_issue_clustering: Grouping Similar Issues into Top Issue and Sub-Issues by Topic
+## 3. top_sub_issue_clustering: Clustering Similar Issues into Top Issue and Sub-Issues by Topic
 - This script performs unsupervised clustering on the aspect(aka issue) column within each topic to identify representative top issues and their related sub-issues.
 - It uses sentence embedding via the **all-MiniLM-L6-v2** model from **SentenceTransformers** to compute semantic similarity between issues.
 - Cosine similarity is used to measure the closeness of issue meanings, and **Agglomerative Clustering groups semantically similar issues** without needing to predefine the number of clusters.
