@@ -15,9 +15,9 @@
 - This script performs unsupervised clustering on the aspect(aka issue) column within each topic to identify representative top issues and their related sub-issues.
 - It uses sentence embedding via the **all-MiniLM-L6-v2** model from **SentenceTransformers** to compute semantic similarity between issues.
 - Cosine similarity is used to measure the closeness of issue meanings, and **Agglomerative Clustering groups semantically similar issues** without needing to predefine the number of clusters.
-- Within each cluster, the **most central issue (closest to the cluster centroid)** is selected ast the **top issue**, while the rest are categorized as **sub-issues**.
-- A mapping is applied to the original review dataset (Music_1000.csv) to add two new columns:
-      - top_issue: the representative issue each sub-issue belongs to
+- Within each cluster, the **most central issue (closest to the cluster centroid)** is selected as the **top issue**, while the rest are categorized as **sub-issues**.
+- A mapping is applied to the original review dataset (Music_1000.csv) to add two new columns: <br>
+      - top_issue: the representative issue each sub-issue belongs to <br>
       - sub_issue_index: the position of the sub-issue within its cluster (1-based); NaN for top issues
 - The enriched dataset is exported as **Music_1000_issue_grouping.csv** for downstream analysis and visualization.
 
