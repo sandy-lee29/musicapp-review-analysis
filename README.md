@@ -12,16 +12,16 @@
 - The processed data is stored in a structured format and exported as a CSV file("**Music_1000**") for further analysis and visualization.
 
 ## 3. top_sub_issue_grouping: Grouping Issues into Top Issue and Sub-Issues by Topic
-- This script performs **semantic grouping of short issue phrases** (aka aspects) within each topic using sentence embeddings.
-      - Embeddings are generated using the **all-MiniLM-L6-v2** model from **SentenceTransformers**.
-      - Cosine similarity is computed between all issues within a topic
-      - A **greedy clustering** approach is used:
-           - The first unseen issue becomes the **top issue** (anchor).
-           - All other issues with similarity >= 0.6 are added as **sub-issues**.
-      - The result is a per-topic mapping of top issues and their related sub-issues.
-      - The original dataset is enriched with two new columns:
+- This script performs **semantic grouping of short issue phrases** (aka aspects) within each topic using sentence embeddings.  <br>
+      - Embeddings are generated using the **all-MiniLM-L6-v2** model from **SentenceTransformers**.  <br>
+      - Cosine similarity is computed between all issues within a topic  <br>
+      - A **greedy clustering** approach is used:  <br>
+           - The first unseen issue becomes the **top issue** (anchor).  <br>
+           - All other issues with similarity >= 0.6 are added as **sub-issues**.  <br>
+      - The result is a per-topic mapping of top issues and their related sub-issues.  <br>
+      - The original dataset is enriched with two new columns:  <br>
            - top_issue: the representative issue assigned to each review <br>
-           - sub_issue_index: 1-based index of sub-issue within its group (NaN for top issue)  
+           - sub_issue_index: 1-based index of sub-issue within its group (NaN for top issue)    <br>
 - This approach is lighweight, interpretable, and works well with generalized short text phrases.
 - The final dataset is exported as **Music_1000_subissues.csv**.
 
