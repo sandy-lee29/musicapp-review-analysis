@@ -26,4 +26,4 @@ This script performs **semantic grouping of short issue phrases** (aka aspects) 
 - The final dataset is exported as **Music_1000_subissues.csv**.
 
 ## 4. Developing an App Review Analytics Dashboard using Streamlit
-- Go to my [Streamlit repo](https://github.com/sandy-lee29/streamlit-music-app)
+- Go to my [Streamlit repo](https://github.com/sandy-lee29/streamlit-app-review-dashboard)
